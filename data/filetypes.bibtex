@@ -1,0 +1,58 @@
+# For complete documentation of this file, please see Geany's main documentation
+[styling]
+# Edit these in the colorscheme .conf file instead
+default=default
+command=keyword_1
+tag=tag
+math=number_1
+comment=comment
+# mappings below may need checking
+tag2=tag
+math2=number_1
+comment2=comment
+verbatim=default
+shortcmd=keyword_1
+special=keyword_2
+cmdopt=keyword_1
+error=error
+
+[keywords]
+# all items must be in one line
+@inproceedings @article @misc @thesis @book @inbook author year journal book howpublished month number pages publisher title volume url booktitle isbn address abstract issn school location
+# additional keywords, will be highlighted with style "word2"
+
+[settings]
+# default extension used when saving files
+extension=bib
+
+# the following characters are these which a "word" can contains, see documentation
+#wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+
+# single comment char, like # in this file
+comment_single=%
+# multiline comments
+#comment_open="""
+#comment_close="""
+
+# set to false if a comment character/string should start at column 0 of a line, true uses any
+# indentation of the line, e.g. setting to true causes the following on pressing CTRL+d
+	#command_example();
+# setting to false would generate this
+#	command_example();
+# This setting works only for single line comments
+comment_use_indent=false
+
+# context action command (please see Geany's main documentation for details)
+context_action_cmd=
+
+[indentation]
+#width=4
+# 0 is spaces, 1 is tabs, 2 is tab & spaces
+#type=0
+
+[build_settings]
+# %f will be replaced by the complete filename
+# %e will be replaced by the filename without extension
+# (use only one of it at one time)
+compiler=bibtex "%f"
+run_cmd=
